@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+body{
+	background-image: url(img/fondo_cerveza_1.jpg);
+	background-size: cover;
+}
+nav{
+	max-width: 900px;
+	margin: auto;
+	background-color: rgba(0, 0, 0, .5);
+	font-size: 16px;
+	margin-top: 50px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li > a{
+	display: block;
+	/* padding: 15px 20px; 
+	border-bottom: 2px solid #fec526;*/
+	padding: 1rem 1rem 1rem 0;
+	color: white;
+	text-decoration: none;
+	padding: 1rem 1rem 1.1rem 0;
+	transition: background 0.3s ease-in-out;
+	font-size: .9rem;
+
+
+}
+.menu-horizontal > li:hover{
+	/* background-color: red; */
+	border-bottom: 2px solid #fec526;
+	background-color: rgba(255, 234, 0, 0.188);
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: rgba(255, 162, 0, 0.236);
+	border-bottom: 2px solid #fec526;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+#html{
+	margin: auto;
+	padding: 20px;
+	max-width: 900px;
+	background: white;
+
+}
